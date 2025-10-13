@@ -1,0 +1,16 @@
+.body {
+  text-align: center;
+  width: 600px;
+  margin: 20px auto;
+}
+
+h1 {
+  display: inline-block;
+  color: white;
+  background-color: blue;
+}
+
+.bold {
+  color: red;
+  font-weight: bold;
+}
