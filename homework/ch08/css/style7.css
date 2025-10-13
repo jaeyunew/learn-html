@@ -1,0 +1,5 @@
+img {
+  border: 1px solid white; /*테두리 1px 흰색 실선*/
+  border-radius: 50%; /*원형 테두리*/
+  box-shadow: 5px 5px 30px 2px #000; /*그림자 효과*/
+}
