@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연습문제 2</title>
+    <link rel="stylesheet" href="css/quiz7.css" />
+  </head>
+  <style></style>
+  <body>
+    <form>
+      <input type="text" id="row" value="0" />행
+      <input type="text" id="column" value="0" />열
+      <button onclick="drawTable(); return false;">작성</button>
+    </form>
+    <div id="contents"></div>
+    <script>
+      function drawTable() {
+        var row = document.querySelector('#row').value;
+        var column = document.querySelector('#column').value;
+
+        var table = document.createElement('table');
+        for (i = 0; i < row; i++) {
+          var newRow = document.createElement('tr');
+          for (j = 0; j < column; j++) {
+            var cell = document.createElement('td');
+            var text = document.createTextNode(i + ', ' + j);
+            cell.appendChild(text);
+            newRow.appendChild(cell);
+          }
+          table.appendChild(newRow);
+        }
+        var contents = document.querySelector('#contents');
+        contents.appendChild(table);
+      }
+    </script>
+  </body>
+</html>
